@@ -1,0 +1,90 @@
+.heading{
+    text-align: center;
+    text-shadow: 7px 7px 7px pink;
+    text-transform: uppercase;
+    color: green;
+}
+
+.gradient{
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    background-clip: text;
+    font-size: 50px;
+}
+
+.p2{
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px;
+    padding: 20px;
+    margin: 10px;
+}
+.bac{
+    background: linear-gradient(to left, green 25%, yellow 85%);
+}
+
+.blockquote{
+    border: 3px dashed black;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+.hr{
+    border: none;
+    height: 4px;
+    background-color: blueviolet;
+    border: 5px dotted black;
+    margin: 15px;
+}
+
+.address{
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+
+}
+
+th:nth-child(1){
+    width: 40%;
+}
+
+.table{
+    margin: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.caption{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+.a{
+    color: red;
+    background-color: tomato;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+a:hover{
+    color: green;
+    background-color: yellow;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:active{
+    color: black;
+}

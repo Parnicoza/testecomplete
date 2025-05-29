@@ -1,0 +1,79 @@
+.main-heading{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px black;
+    font-size: 3.5em;
+    background: linear-gradient(to right, yellow 0%, yellow 10%, blue 90%, blue 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.background-for-the-heading{
+    background: linear-gradient(to right, blue, red);
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.paragraph-gradient{
+    background: linear-gradient(to right, darkgreen, magenta);
+    background-clip: text;
+    color: transparent;
+    font-size: 2em;
+}
+
+.semi-transparent-background{
+    background-color: rgba(138, 43, 226, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+.quote{
+    border: 1px dotted black;
+    padding: 10px;
+}
+
+.divider{
+    border: none;
+    height: 4px;
+    background-color: lightgray;
+    border: 3pz dotted black;
+    margin: 14px;
+
+}
+
+.image{
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
+}
+
+.caption{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Dashboard{
+    display: flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar{
+    float: left;
+}

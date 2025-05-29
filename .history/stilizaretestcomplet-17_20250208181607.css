@@ -1,0 +1,135 @@
+body{
+    font-family: 'Antic Slab', serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(250, 210, 180, 1); /* Soft peachy beige */;
+  }
+
+
+  .antic-slab-regular {
+    font-family: "Antic Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .main-heading{
+    font-size: 40px;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .background {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(230, 125, 100, 1);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px;
+    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    justify-content: space-evenly;
+    gap: 20px;
+    min-height: 1000px;
+}
+
+  .background:hover{
+    background-color: rgba(210, 105, 80, 1); /* Elegant reddish-brown */ 
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+  .introduction{
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: larger;
+  }
+
+  .book-background{
+  width: 28%;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgba(130, 90, 70, 1);
+  border-radius: 5px;
+  min-height: 400px;
+  box-shadow: 6px 6px 15px;
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+  .book-background:hover{
+    background-color: rgba(110, 70, 50, 1);
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .cover{
+    width: 120px; /* Dimensiune fixă, ajustabilă */
+    height: auto; /* Păstrează proporțiile */
+    float: left; /* Mută imaginea în stânga */
+    margin-right: 10px; /* Adaugă un mic spațiu între imagine și text */
+    border-radius: 5px; /* Opțional, pentru un aspect mai plăcut */
+  }
+
+  .cover:hover{
+    filter: brightness(0.8); /* Întunecă imaginea la hover */
+    transition: filter 0.4s ease; /* Adaugă o tranziție lină */
+  }
+
+  .book-title{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 15px;
+    background-color: transparent;
+}
+
+.table{
+  width: 100%;
+  box-shadow: 6px 6px 15px;
+  background-color: rgba(130, 90, 70, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  
+}
+
+.table:hover{
+  background-color: rgba(110, 70, 50, 1);
+  transform: translateY(-10px);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+th{
+  font-weight: bold;
+}
+
+.navigation-bar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(130, 90, 70, 1);
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 6px 6px 15px;
+}
+
+nav {
+  width: 100%;
+  flex-basis: 100%;
+  margin: 25px 0;
+}

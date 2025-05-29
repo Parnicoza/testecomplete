@@ -1,0 +1,294 @@
+body{
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+}
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('imaginitestecomplete/sky.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* A RAMAS SA PUN BACKGROUND */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+.background-after-hero {
+    background: linear-gradient(to bottom, #1e3c56, #2c516d, #4a6d88), rgba(255, 255, 255, 0.08);
+    background-blend-mode: overlay;
+    padding: 40px;
+    margin-top: 0;
+    min-height: 60vh;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    margin: 30px;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-heading-pentru-productivity{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    line-height: 1.2em;
+    margin-top: 220px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    font-weight: 450;
+}
+
+.caption-for-the-heading{
+    display: inline-block;
+    text-align: left;
+    margin-left: 45px;
+    font-size: x-large;
+    color: white;
+}
+
+.HIIAMALEX{
+    color: white;
+    text-align: center;
+}
+
+.HIIAMALEX h2{
+    font-weight: 330;
+    font-size: 3.4em;
+}
+
+.HIIAMALEX p{
+    font-weight: 200;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.button{
+    background: transparent;
+   border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 240px;
+    height: 52px;
+    margin-top: 35px;
+    margin-left: 45px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;         /* de jos, complet ascuns la început */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1e3c56, #2c516d, #4a6d88), rgba(255, 255, 255, 0.08);
+    transition: bottom 0.4s ease;
+    z-index: 0;
+}
+.button:hover::before {
+    bottom: 0;  /* se ridică complet peste buton */
+}
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.learn-more-btn{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    margin-top: 90px;
+}
+
+.learn-more-btn::before{
+    content: "";
+    position: absolute;
+    bottom: -100%;         /* de jos, complet ascuns la început */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, #cc5200 10%, #ff7a00 40%, #ffd700 90%);
+    transition: bottom 0.4s ease;
+    z-index: 0;
+}
+
+.learn-more-btn:hover::before{
+    bottom: 0;  /* se ridică complet peste buton */
+}
+
+.learn-more-btn span{
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter{
+    background: linear-gradient(to top right, #cc5200 10%, #ff7a00 40%, #ffd700 90%);
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.singup {
+    color: white;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 1.2;
+}
+.span {
+    display: inline-block;
+    font-weight: 600;
+    width: 250px;
+    text-align: left;
+    font-size: 38px;
+    letter-spacing: 0.5px;
+}
+
+.newsletter-text{
+    border: 2px solid white;
+    width: 1150px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+} 
+.text{
+    margin: 50px;
+    position: relative;
+    z-index: 2;
+}
+.newsletter-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(30, 60, 86, 0.3),
+      rgba(44, 81, 109, 0.3),
+      rgba(74, 109, 136, 0.3)
+    );
+    backdrop-filter: blur(30px);
+    border-radius: 4px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.newsletter-form-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+form {
+    display: flex;
+    gap: 20px;
+  }
+  
+  form input {
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+  }
+  form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffa50044;
+  }
+  .explore-courses{
+    background: linear-gradient(to bottom, #1e3c56, #2c516d, #4a6d88), rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .explore-courses-text{
+    width: 50%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    line-height: 25px;
+    font-weight: 200;
+    margin-top: 45.152px;
+  }
+
+  .explore-courses h2{
+    font-weight: 330;
+    font-size: 3.4em;
+    color: white;
+    text-align: center;
+}
+
+.course-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.borderfortheimages{
+    border-radius: 25px;
+}
+.scroll-appear {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.scroll-appear.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.join-btn {
+    margin-top: 50px;      /* pushes the button down a bit */
+    margin-bottom: 40px;   /* optional bottom spacing */
+}
