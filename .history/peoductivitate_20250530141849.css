@@ -200,15 +200,14 @@ nav{
     margin: 20px auto;
     position: relative;
     border-radius: 10px;
-    margin: 20px auto;
+    margin-left: 425 px;
 } 
-.text {
+.text{
     margin: 50px;
     position: relative;
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 40px;
 }
 /* keep paragraph and form widths responsive */
@@ -305,15 +304,15 @@ form {
 .borderfortheimages{
     border-radius: 25px;
 }
-/* Updated scroll-appear effect to avoid transform conflict with hover */
 .scroll-appear {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(-30px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .scroll-appear.show {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .join-btn {
@@ -338,31 +337,11 @@ form {
 
 .imaginidesprecurs{
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 .modificariimaginidecurs{
-    display: block;
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    transform-style: preserve-3d;
-}
-
-.modificariimaginidecurs:hover {
-    transform: scale(1.03) translateY(-25px);
-    box-shadow: 0 35px 45px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-
-/* Updated scroll-appear effect to avoid transform conflict with hover */
-.scroll-appear {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
-}
-
-.scroll-appear.show {
-    opacity: 1;
 }

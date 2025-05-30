@@ -305,15 +305,15 @@ form {
 .borderfortheimages{
     border-radius: 25px;
 }
-/* Updated scroll-appear effect to avoid transform conflict with hover */
 .scroll-appear {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(-30px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .scroll-appear.show {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .join-btn {
@@ -356,13 +356,13 @@ form {
 }
 
 
-/* Updated scroll-appear effect to avoid transform conflict with hover */
 .scroll-appear {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateY(-30px);
+    transition: opacity 1s ease, transform 1.5s ease;
 }
 
 .scroll-appear.show {
     opacity: 1;
+    transform: translateY(0);
 }
