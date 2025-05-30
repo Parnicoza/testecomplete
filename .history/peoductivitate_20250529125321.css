@@ -1,3 +1,44 @@
+.newsletter-form-row{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-top:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.newsletter-form-row input{
+    width:240px;
+    padding:12px 18px;
+    border-radius:25px;
+    border:none;
+    background:#fff;
+    font-size:16px;
+}
+.newsletter-form-row input:focus{
+    outline:none;
+    box-shadow:0 0 0 2px #ffa50044;
+}
+
+.newsletter-form-row button{
+    padding:13px 26px;
+    border-radius:25px;
+    background:#ffffff;
+    border:none;
+    cursor:pointer;
+    transition:background 0.3s ease;
+}
+.newsletter-form-row button:hover{
+    background:#ffe3b3;
+}
+
+/* mobile stacking */
+@media (max-width:600px){
+    .newsletter-form-row{
+        flex-direction:column;
+        gap:15px;
+    }
+}
 html,body{overflow-x:hidden;}
 body{
     font-family: "Roboto Flex", sans-serif;
@@ -200,30 +241,12 @@ nav{
     margin: 20px auto;
     position: relative;
     border-radius: 10px;
-    margin-left: 425 px;
+
 } 
 .text{
     margin: 50px;
     position: relative;
     z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-/* keep paragraph and form widths responsive */
-.singup{
-    flex: 1 1 50%;
-}
-.newsletter-form-row{
-    flex: 0 0 auto;
-}
-
-@media (max-width: 800px){
-    .text{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
 }
 .newsletter-overlay{
     position: absolute;
